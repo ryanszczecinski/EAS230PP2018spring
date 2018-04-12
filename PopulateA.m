@@ -17,6 +17,6 @@ for i = 2:n-1
     A(i,i)= row(2);
     A(i,i+1)= row(3);
 end
-LastR = LastM(h,k,deltaX,theta)
+LastR = LastM(h,k,deltaX,theta);
 A(n,n-1) =LastR(1);
 A(n,n) = LastR(2);
