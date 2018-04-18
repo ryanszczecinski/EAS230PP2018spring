@@ -1,6 +1,6 @@
 L=.05;
 % L is the total length of the fin (in meters)
-m=6;
+m=101;
 % m is the number of nodes in the fin
 h=15;
 % h is the heat transfer coefficient of the fin
@@ -20,4 +20,4 @@ Tinf=25;
 % Tinf is the temperature of the air/medium around the fin (in Celsius)
 A=PopulateA(h,k,deltax,L,theta,m);
 vector_b=Populateb(T0,Tinf,m,h,deltax,k,L,theta);
-T=A\vector_b
+T=A\vector_b;

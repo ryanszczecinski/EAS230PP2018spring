@@ -11,6 +11,7 @@ function [vector_b]=Populateb(T0,Tinf,m,h,deltax,k,L,theta)
 %   theta (in radians)
 % Output Arguments
 %   vector_b
+vector_b=zeros(m,1);
 vector_b(1,1)=T0;
     for n=2:(m-1)
         vector_b(n,1)=((-h*(deltax^2))/(k*L*sin(theta)))*Tinf;  
